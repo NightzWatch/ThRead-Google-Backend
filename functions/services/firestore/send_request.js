@@ -44,8 +44,8 @@ module.exports = (req, res) => {
 
         return batch.commit()
             .then(() => {
-                console.log('Current user has successfully sent request');
-                return res.send({ Success: true });
+                console.log('User (' + userId + '), has successfully sent request to user (' + requestedUserDoc.id + ')');
+                return res.send({ success: true });
             })
             .catch(error => {
                 console.log('Error performing batch updates on contact request: ', error);

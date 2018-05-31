@@ -1,7 +1,7 @@
 # ThRead-Google-Backend
 
-## Node Version
-???
+## Google Node Version
+- 6.14.0
 
 ## Local Set up
 - ```npm install -g firebase-tools```

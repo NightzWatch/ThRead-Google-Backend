@@ -12,7 +12,7 @@ module.exports = (req, res) => {
     const { userId } = req.query;
     const authData = chatkit.authenticate({ userId });
 
-    console.log('chat user authenticated successfully');
+    console.log('Chatkit User (' + userId + ') Authenticated Successfully');
 
     return res.send(authData.body);
 };

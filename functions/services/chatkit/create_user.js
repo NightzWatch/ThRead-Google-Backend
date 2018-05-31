@@ -16,7 +16,7 @@ module.exports = (req, res) => {
         name: `${first_name} ${last_name}`,
     })
     .then(response => {
-        console.log('User created successfully');
+        console.log('Chatkit User Created Successfully');
         return res.send(response);
     }).catch((error) => {
         console.log('Create Chatkit User Error: ', error);
