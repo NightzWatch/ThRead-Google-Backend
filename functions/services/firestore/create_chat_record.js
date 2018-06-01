@@ -13,7 +13,7 @@ module.exports = (req, res) => {
         return res.status(422).send({ error: 'Room ID is missing' });
     }
 
-    const { userId, friendUserID } = req.body;
+    const { userId, friendUserID, roomId } = req.body;
 
     const db = admin.firestore();
     const currentUserRef = db.collection('users').doc(userId);
