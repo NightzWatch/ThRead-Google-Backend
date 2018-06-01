@@ -15,6 +15,7 @@ module.exports = (req, res) => {
 
     const { userId, friendUserID } = req.body;
 
+    const db = admin.firestore();
     const currentUserRef = db.collection('users').doc(userId);
     const friendRef = db.collection('users').doc(friendUserID);
     const batch = db.batch();
